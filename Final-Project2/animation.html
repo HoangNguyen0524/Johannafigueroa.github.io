@@ -6,6 +6,7 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.js"></script>
     <script type="text/javascript" src="sketch.js"></script>
+    <script type="text/javascript" src="map.js"></script>
      <link rel="stylesheet" href="man.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
     <title>animation</title>
@@ -26,21 +27,6 @@
      <div id="patrick-stump">
     </div>
     <!--oof, maybe maps-->
-    <h3>Google Maps Data</h3>
-      <div id="map"></div>
-       <script>
-function initMap() {
-  // The location of Uluru
-  var uluru = {lat: -25.344, lng: 131.036};
-  // The map, centered at Uluru
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 4, center: uluru});
-  // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: uluru, map: map});
-}
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzdkIqv9_8Rfs6VK0FoBbmaoeAtqFhobs&callback=initMap">
-    </script>
+    <h3>Maps Data</h3>
   </body>
 </html>
